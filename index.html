@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crystal AgentOS — свободный локальный управляющий слой для персональных AI-агентов, Telegram Business и MCP.">
+  <meta name="theme-color" content="#07111f">
+  <title>Crystal AgentOS — свободная операционная система для AI-агентов</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Crystal AgentOS">
+      <span class="brand-mark">A</span>
+      <span>Crystal AgentOS</span>
+    </a>
+    <nav aria-label="Главная навигация">
+      <a href="#why">Зачем</a>
+      <a href="#telegram">Telegram</a>
+      <a href="#start">Установка</a>
+      <a href="https://github.com/crystalstrategysup-prog/agent-os">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="eyebrow">OPEN SOURCE · LOCAL FIRST · APACHE 2.0</div>
+      <h1>Не просто агент.<br><span>Среда, которой вы управляете.</span></h1>
+      <p class="lead">AgentOS превращает AI-клиент в понятную рабочую систему: задачи,
+        границы полномочий, MCP, диагностика и Telegram Business — под вашим контролем.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/crystalstrategysup-prog/agent-os">Скачать бесплатно</a>
+        <a class="button secondary" href="#start">Быстрый старт</a>
+      </div>
+      <div class="terminal" role="img" aria-label="Пример установки AgentOS">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>agentos — local</span></div>
+        <pre><span>$</span> pip install crystal-agent-os
+<span>$</span> agentos init
+<b>PASS</b>  private AgentOS home created
+<span>$</span> agentos doctor
+<b>PASS</b>  configuration · secrets · MCP</pre>
+      </div>
+    </section>
+
+    <section class="manifesto" id="why">
+      <div class="shell split">
+        <h2>Модель умеет думать.<br>AgentOS помогает ей работать.</h2>
+        <div>
+          <p>Надёжному агенту недостаточно хорошего промпта. Ему нужны явные права,
+            локальная конфигурация, проверяемые инструменты и понятный маршрут результата.</p>
+          <p>Открытая редакция не зависит от нашей инфраструктуры и не отправляет ваши данные
+            в скрытый облачный сервис.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features shell">
+      <article><span>01</span><h3>Локальный контроль</h3><p>Конфигурация и секреты остаются у вас. Никаких встроенных чужих аккаунтов и хостов.</p></article>
+      <article><span>02</span><h3>Безопасный MCP</h3><p>Узкие инструменты вместо произвольного shell, SSH и доступа ко всей файловой системе.</p></article>
+      <article><span>03</span><h3>Проверяемые задачи</h3><p>Задача нормализуется и получает уровень риска до того, как исполнитель начнёт работу.</p></article>
+      <article><span>04</span><h3>Открытое развитие</h3><p>Используйте, изучайте, делайте форки, добавляйте адаптеры и помогайте сообществу.</p></article>
+    </section>
+
+    <section class="telegram" id="telegram">
+      <div class="shell telegram-grid">
+        <div>
+          <div class="eyebrow">MY TELEGRAM BUSINESS</div>
+          <h2>Ваш Telegram становится интерфейсом AgentOS</h2>
+          <p>Без обязательного внешнего сайта. Регистрация остаётся в официальном Telegram,
+            а подключение проходит по прозрачной последовательности.</p>
+        </div>
+        <ol>
+          <li><b>Telegram account</b><span>Создайте аккаунт, если его ещё нет.</span></li>
+          <li><b>Owner approval</b><span>Получите разрешение владельца установки.</span></li>
+          <li><b>QR + StringSession</b><span>Авторизуйте сессию через Telegram QR.</span></li>
+          <li><b>Telegram Business</b><span>Подключите business bot и MCP-клиент.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="start shell" id="start">
+      <div>
+        <div class="eyebrow">START IN MINUTES</div>
+        <h2>Начните с малого.<br>Развивайте вместе с нами.</h2>
+      </div>
+      <div class="install-card">
+        <button id="copy" type="button" data-command="git clone https://github.com/crystalstrategysup-prog/agent-os.git">Копировать</button>
+        <code>git clone https://github.com/crystalstrategysup-prog/agent-os.git</code>
+        <code>cd agent-os &amp;&amp; python3 -m venv .venv</code>
+        <code>. .venv/bin/activate &amp;&amp; pip install -e .</code>
+        <code>agentos init &amp;&amp; agentos doctor</code>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <div><b>Crystal AgentOS</b><br><span>Свободная инфраструктура персональных агентов.</span></div>
+    <div><a href="https://github.com/crystalstrategysup-prog/agent-os/blob/main/LICENSE">Apache 2.0</a> · <a href="https://github.com/crystalstrategysup-prog/agent-os/blob/main/CONTRIBUTING.md">Contributing</a></div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
