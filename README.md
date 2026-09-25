@@ -11,7 +11,7 @@ python3 -m http.server 8080
 
 Public path: `https://crystalstrategy.ru/agent-os/`.
 
-The page presents the AgentOS `0.5.0-beta.2` community beta and links to its
+The page presents the AgentOS `0.5.0-beta.3` community beta and links to its
 tagged source and changelog. Its installation example uses a source checkout:
 the `crystal-agent-os` package is not available on PyPI at this release.
 
