@@ -25,41 +25,40 @@
 
   <main id="top">
     <section class="hero shell">
-      <div class="eyebrow">v0.4.0 · OPEN SOURCE · LOCAL FIRST · APACHE 2.0</div>
+      <div class="eyebrow">v0.5.0-beta.1 · OPEN SOURCE · LOCAL FIRST · APACHE 2.0</div>
       <h1>Не просто агент.<br><span>Среда, которой вы управляете.</span></h1>
       <p class="lead">AgentOS превращает AI-клиент в понятную рабочую систему: задачи,
         границы полномочий, MCP, диагностика и Telegram Business — под вашим контролем.</p>
       <div class="actions">
-        <a class="button primary" href="https://github.com/crystalstrategysup-prog/agent-os">Скачать бесплатно</a>
-        <a class="button secondary" href="https://github.com/crystalstrategysup-prog/agent-os/blob/v0.4.0/CHANGELOG.md">Что нового в 0.4</a>
+        <a class="button primary" href="https://github.com/crystalstrategysup-prog/agent-os/tree/v0.5.0-beta.1">Исходный код и установка</a>
+        <a class="button secondary" href="https://github.com/crystalstrategysup-prog/agent-os/blob/v0.5.0-beta.1/CHANGELOG.md">Что нового в beta</a>
       </div>
       <div class="terminal" role="img" aria-label="Пример установки AgentOS">
         <div class="terminal-bar"><i></i><i></i><i></i><span>agentos — local</span></div>
-        <pre><span>$</span> pip install crystal-agent-os
-<span>$</span> agentos init
-<b>PASS</b>  private AgentOS home created
-<span>$</span> agentos doctor
-<b>PASS</b>  configuration · secrets · MCP</pre>
+        <pre><span>$</span> git clone --branch v0.5.0-beta.1 https://github.com/crystalstrategysup-prog/agent-os.git
+<span>$</span> cd agent-os &amp;&amp; python3 -m venv .venv
+<span>$</span> . .venv/bin/activate &amp;&amp; pip install -e .
+<span>$</span> agentos init &amp;&amp; agentos doctor</pre>
       </div>
     </section>
 
     <section class="release" id="release">
       <div class="shell release-grid">
         <div>
-          <div class="eyebrow">COMMUNITY RELEASE · 19 SEPTEMBER 2026</div>
-          <h2>AgentOS 0.4:<br>карта знаний без мусора.</h2>
-          <p>Это открытая alpha-версия для локальной оценки и технической
+          <div class="eyebrow">COMMUNITY BETA · 25 SEPTEMBER 2026</div>
+          <h2>AgentOS 0.5 beta:<br>документация ведёт реализацию.</h2>
+          <p>Это открытая beta-версия для локальной оценки и технической
             критики. Мы не называем её продакшен-системой и не просим доверять нам
             на слово: код, границы и тесты открыты для проверки.</p>
-          <a class="text-link" href="https://github.com/crystalstrategysup-prog/agent-os/releases/tag/v0.4.0">
-            Читать release notes v0.4.0 →
+          <a class="text-link" href="https://github.com/crystalstrategysup-prog/agent-os/blob/v0.5.0-beta.1/CHANGELOG.md">
+            Читать изменения v0.5.0-beta.1 →
           </a>
         </div>
         <div class="release-list">
-          <article><b>Полная инвентаризация</b><span>Шесть классов знаний, явные корни проектов, пути и SHA-256 — без копирования содержимого.</span></article>
-          <article><b>Только нужный контекст</b><span>AgentOS выбирает актуальные policy и roadmap; история не загружается автоматически.</span></article>
-          <article><b>Проверка обновлений раз в 48 часов</b><span>Встроенная advisory-проверка запускается при активности AgentOS и никогда не ставит обновления сама.</span></article>
-          <article><b>Нужна ваша критика</b><span>Проверьте threat model, установку, MCP-границы и Telegram onboarding.</span></article>
+          <article><b>Два физических слоя</b><span>Проверяемое общее ядро отдельно от личной конфигурации, секретов и знаний.</span></article>
+          <article><b>Документы перед кодом</b><span>Досье, дорожная карта и документация этапа задают реализацию и приёмку.</span></article>
+          <article><b>Выбор нужного контекста</b><span>Короткий опрос задачи выбирает относящиеся к ней документы; всю историю читать не нужно.</span></article>
+          <article><b>Проверяемое обновление</b><span>Установка и откат сохраняют пользовательскую надстройку; advisory ничего не ставит автоматически.</span></article>
         </div>
       </div>
     </section>
@@ -109,8 +108,8 @@
         <h2>Начните с малого.<br>Развивайте вместе с нами.</h2>
       </div>
       <div class="install-card">
-        <button id="copy" type="button" data-command="git clone https://github.com/crystalstrategysup-prog/agent-os.git">Копировать</button>
-        <code>git clone https://github.com/crystalstrategysup-prog/agent-os.git</code>
+        <button id="copy" type="button" data-command="git clone --branch v0.5.0-beta.1 https://github.com/crystalstrategysup-prog/agent-os.git">Копировать</button>
+        <code>git clone --branch v0.5.0-beta.1 https://github.com/crystalstrategysup-prog/agent-os.git</code>
         <code>cd agent-os &amp;&amp; python3 -m venv .venv</code>
         <code>. .venv/bin/activate &amp;&amp; pip install -e .</code>
         <code>agentos init &amp;&amp; agentos doctor</code>
